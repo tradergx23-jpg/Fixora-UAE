@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FIXORA — MacBook & iPhone Repair in Abu Dhabi</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><h1>FIXORA</h1><p>Professional MacBook, iPhone, iPad &amp; Samsung repair — Abu Dhabi</p></header>
+<main>
+<section><h2>Free diagnosis • Same-day repair • 90-day warranty</h2>
+<p>Call <a href="tel:+971558880314">+971 55 888 0314</a> or visit justfixuae.com</p></section>
+<section><h2>Services</h2><ul>
+<li>iPhone — cracked screen, battery, charging port</li>
+<li>MacBook — cracked screen, keyboard, battery, logic board</li>
+<li>iPad — screen, battery</li>
+<li>Samsung — screen, battery</li>
+</ul></section>
+<section><h2>Get an estimate</h2>
+<label>Device <select id="device"><option>iPhone</option><option>MacBook</option><option>iPad</option><option>Samsung</option></select></label>
+<label>Repair <select id="repair"><option>Screen</option><option>Battery</option><option>Keyboard</option><option>Logic board</option></select></label>
+<button onclick="estimate()">Estimate</button>
+<p id="result">Diagnosis is free — this is only a guide, final price is confirmed after free diagnosis.</p>
+</section>
+<section><h2>Book a free diagnosis</h2>
+<form id="book" onsubmit="return bookRepair(event)">
+<input id="name" placeholder="Your name" required>
+<input id="phone" placeholder="Phone / WhatsApp" required>
+<input id="model" placeholder="Device model, e.g. iPhone 13 / MacBook Air M2" required>
+<button type="submit">Request booking</button>
+<p id="booked"></p>
+</form></section>
+</main>
+<footer>FIXORA Device Repair, Abu Dhabi, UAE • 90-day warranty on eligible repairs</footer>
+<script src="script.js"></script>
+</body>
+</html>
